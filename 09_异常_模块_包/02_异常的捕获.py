@@ -15,8 +15,9 @@ except ZeroDivisionError as e:  # 只捕获了异常ZeroDivisionError
 
 # 捕获所有异常 Exception as e
 try:
-    1 / 0  # ZeroDivisionError: division by zero
-    f = open("d:/999.txt", 'r', encoding='UTF-8')
+    # 1 / 0  # ZeroDivisionError: division by zero
+    f = open("d:/999.txt", 'r', encoding='UTF-8')  # FileNotFoundError
+    # print(name)  # NameError
 except Exception as e:  # 捕获第一次出现的异常ZeroDivisionError
     print(e)
     print(f'异常是：{type(e)}')
