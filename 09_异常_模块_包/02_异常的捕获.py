@@ -30,3 +30,26 @@
 # except Exception as e:  # 捕获第一次出现的异常ZeroDivisionError
 #     print(e)
 #     print(f'异常是：{type(e)}')
+
+# 异常else
+# try:  # 尝试捕获异常
+#     print('0')
+#     # print(age)
+# except Exception as e:  # 出现异常了执行
+#     print(f'出现异常：{type(e)},{e}')
+# else:  # else可选。没出现异常执行
+#     print('没出现异常')
+
+# 异常的finally
+try:  # 尝试捕获异常
+    # print('0')
+    # print(age)
+    f = open('d:/000.txt', 'r', encoding='UTF-8')
+except Exception as e:  # 出现异常了执行
+    f = open('d:/000.txt', 'w', encoding='UTF-8')
+    print(f'出现异常：{type(e)},{e}')
+else:  # else可选。没出现异常执行
+    print('没出现异常')
+finally:  # 最终都会执行，无论出现异常没有。常用于关闭文件、资源。
+    f.close()
+    print('程序结束')
