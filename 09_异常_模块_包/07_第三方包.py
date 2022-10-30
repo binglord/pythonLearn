@@ -5,6 +5,7 @@
 大数据计算 pyspark apache-flink
 图形可视化 matplotlib pyecharts
 人工智能 tensorflow
+等等
 
 安装方法：
 安装命令：pip install numpy
